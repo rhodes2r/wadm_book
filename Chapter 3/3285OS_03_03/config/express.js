@@ -19,7 +19,7 @@ module.exports = function() {
     app.use(bodyParser.json());
     app.use(methodOverride());
 
-    require('./routes/index.server.routes.js')(app);
+    require('../app/routes/index.server.routes.js')(app);
 
     return app;
 };
